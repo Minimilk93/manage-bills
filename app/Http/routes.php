@@ -17,6 +17,8 @@ Route::bind('providers', function($slug)
     return App\Provider::whereSlug($slug)->first();
 });
 
+Route::get('/', 'PagesController@index');
+
 $router->resource('providers', 'ProvidersController');
 
 $router->resource('reviews', 'ReviewsController');
