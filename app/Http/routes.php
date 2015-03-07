@@ -13,7 +13,6 @@
 
 Route::bind('providers', function($slug)
 {
-
     return App\Provider::whereSlug($slug)->first();
 });
 

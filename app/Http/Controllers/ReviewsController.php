@@ -4,6 +4,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
+use App\Review;
 
 class ReviewsController extends Controller {
 
@@ -24,7 +25,7 @@ class ReviewsController extends Controller {
 	 */
 	public function create()
 	{
-		//
+
 	}
 
 	/**
@@ -32,9 +33,13 @@ class ReviewsController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store(Request $request, Review $review)
 	{
-		//
+		$input = $request->all();
+
+        $review->create($request->all());
+
+        return redirect('/providers');
 	}
 
 	/**
