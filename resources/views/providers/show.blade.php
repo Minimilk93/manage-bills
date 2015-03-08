@@ -27,9 +27,9 @@
 
         <table class="table table-bordered">
 
-             <tr>
-                <td><b>Utility Used:</b>{{$review->utility}}</td>
-                <td><b>Location:</b>{{$review->location}}</td>
+             <tr class="info">
+                <td style="width:50%"><b>Utility Used:</b>{{$review->utility}}</td>
+                <td style="width:50%"><b>Location:</b>{{$review->location}}</td>
 
             </tr>
             <tr >

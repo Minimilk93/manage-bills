@@ -60,9 +60,13 @@
       <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/providers/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8994083" vertical-offset="291" max-vertical-offset="799">
-              <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
-              <folding />
+            <state vertical-scroll-proportion="0.5976331" vertical-offset="291" max-vertical-offset="799">
+              <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+              <folding>
+                <element signature="e#801#818#0#HTML" expanded="true" />
+                <element signature="e#885#902#0#HTML" expanded="true" />
+                <element signature="e#1003#1023#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -413,7 +417,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#801#818#0#HTML" expanded="true" />
+            <element signature="e#885#902#0#HTML" expanded="true" />
+            <element signature="e#1003#1023#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -541,7 +549,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="238">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#801#818#0#HTML" expanded="true" />
+            <element signature="e#885#902#0#HTML" expanded="true" />
+            <element signature="e#1003#1023#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -680,9 +692,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/providers/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8994083" vertical-offset="291" max-vertical-offset="799">
-          <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
-          <folding />
+        <state vertical-scroll-proportion="0.5976331" vertical-offset="291" max-vertical-offset="799">
+          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+          <folding>
+            <element signature="e#801#818#0#HTML" expanded="true" />
+            <element signature="e#885#902#0#HTML" expanded="true" />
+            <element signature="e#1003#1023#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
