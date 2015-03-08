@@ -14,15 +14,16 @@
 <div class ="container">
     <h1>Manging Bills Web Application</h1>
 
-    <div class = "nav">
-
+    <nav class="navbar navbar-inverse">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
         <li><a href="/">Home</a></li>
         <li><a href="/providers">Have Your Say</a></li>
         <li></li>
         <li></li>
-
-    </div>
-    </div>
+    </ul>
+            </div>
+    </nav>
 
 <div class ="container">
     @yield('content')
