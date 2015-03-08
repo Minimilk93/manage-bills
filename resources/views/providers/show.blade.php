@@ -24,9 +24,19 @@
     </div>
 
     @foreach ($reviews as $review)
-        {{$review->utility}}
-        {{$review->location}}
-        {{$review->review}}
+
+        <table class="table table-bordered">
+
+             <tr>
+                <td><b>Utility Used:</b>{{$review->utility}}</td>
+                <td><b>Location:</b>{{$review->location}}</td>
+
+            </tr>
+            <tr >
+                <td style="height:100px" colspan="2">{{$review->review}}</td>
+            </tr>
+        </table>
+
     @endforeach
 
 @stop
