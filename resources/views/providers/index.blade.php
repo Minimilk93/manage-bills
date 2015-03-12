@@ -6,7 +6,7 @@
 
     @foreach ($providers as $provider)
 
-    <li><a href="/providers/{{ $provider->id }}">{{ $provider->name }}</a></li>
+    <li><a href="/providers/{{ $provider->slug }}">{{ $provider->name }}</a></li>
 
     @endforeach
 

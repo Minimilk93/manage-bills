@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h2>{{ $provider->name }}</h2>
+    <h2>{{ $provider->name }} Information</h2>
 
     {!! Form::open(['route' => 'reviews.store']) !!}
 
