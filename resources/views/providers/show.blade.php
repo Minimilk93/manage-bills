@@ -23,20 +23,7 @@
         {!! Form::submit('Add Review', ['class' => 'btn btn-primary']) !!}
     </div>
 
-    @foreach ($reviews as $review)
+    {!! Form::close() !!}
 
-        <table class="table table-bordered">
-
-             <tr class="info">
-                <td style="width:50%"><b>Utility Used:</b>{{$review->utility}}</td>
-                <td style="width:50%"><b>Location:</b>{{$review->location}}</td>
-
-            </tr>
-            <tr >
-                <td style="height:100px" colspan="2">{{$review->review}}</td>
-            </tr>
-        </table>
-
-    @endforeach
 
 @stop

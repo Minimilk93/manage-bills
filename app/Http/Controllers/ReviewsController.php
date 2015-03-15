@@ -13,9 +13,11 @@ class ReviewsController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function index()
+	public function index(Review $review)
 	{
-		//
+        $reviews = $review->get();
+
+        return view('reviews.index', compact('review'));
 	}
 
 	/**
@@ -39,7 +41,7 @@ class ReviewsController extends Controller {
 
         $review->create($request->all());
 
-        return redirect('/providers');
+        return redirect('/reviews');
 	}
 
 	/**

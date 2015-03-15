@@ -48,12 +48,10 @@ class ProvidersController extends Controller {
      * @param  int  $id
      * @return Response
      */
-    public function show(Provider $provider, Review $review)
+    public function show(Provider $provider)
     {
-        //	$provider = Provider::whereSlug($slug)->first();
-        $reviews = $review->get();
 
-        return view('providers.show', compact('provider'), compact('reviews'));
+        return view('providers.show', compact('provider'));
     }
     /**
      * Show the form for editing the specified resource.
