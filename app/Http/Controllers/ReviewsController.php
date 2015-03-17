@@ -17,9 +17,9 @@ class ReviewsController extends Controller {
 	{
         $query = Request::get('q');
 
-        if ($query)
-        {
-            $reviews = Review::where('utility', 'LIKE', "%$query%")->get();
+        if ($query) {
+            $reviews = Review::where('utility', 'LIKE', "%$query%")
+                ->orWhere('location', 'LIKE', "%$query%")->get();
         }
         else
         {
