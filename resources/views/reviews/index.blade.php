@@ -13,7 +13,7 @@
     {!! Form::close() !!}
 
 
-
+    @foreach($reviews as $review)
         <table class="table table-bordered">
 
             <tr class="info">
@@ -25,6 +25,9 @@
                 <td style="height:100px" colspan="2">{{$review->review}}</td>
             </tr>
         </table>
+    @endforeach
+
+
 
 
 

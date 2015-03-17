@@ -16,21 +16,6 @@ Route::bind('providers', function($slug)
     return App\Provider::whereSlug($slug)->first();
 });
 
-Route::get('reviews', function()
-{
-    $query = Request::get('q');
-
-          if ($query)
-          {
-              $reviews = Review::where('utility', 'LIKE', "%$query%")->get();
-          }
-        else
-        {
-            $reviews = Review::all();
-        }
-
-    return View::make('reviews.index')->withReviews($reviews);
-});
 
 Route::get('/', 'PagesController@index');
 

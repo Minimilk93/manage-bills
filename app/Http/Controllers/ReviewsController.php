@@ -2,8 +2,8 @@
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Request;
 
-use Illuminate\Http\Request;
 use App\Review;
 
 class ReviewsController extends Controller {
@@ -15,9 +15,18 @@ class ReviewsController extends Controller {
 	 */
 	public function index(Review $review)
 	{
-        $reviews = $review->get();
+        $query = Request::get('q');
 
-        return view('reviews.index', compact('review'));
+        if ($query)
+        {
+            $reviews = Review::where('utility', 'LIKE', "%$query%")->get();
+        }
+        else
+        {
+            $reviews = Review::all();
+        }
+
+        return view('reviews.index')->withReviews($reviews);
 	}
 
 	/**
