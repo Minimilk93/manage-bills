@@ -16,6 +16,10 @@ Route::bind('providers', function($slug)
     return App\Provider::whereSlug($slug)->first();
 });
 
+Route::controllers([
+    'auth' => 'Auth\AuthController',
+    'password' => 'Auth\PasswordController',
+]);
 
 Route::get('/', 'PagesController@index');
 
