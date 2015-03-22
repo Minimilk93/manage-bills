@@ -5,7 +5,7 @@
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
 			<div class="panel panel-default">
-				<div class="panel-heading">Register</div>
+				<div class="panel-heading">Register Your Details</div>
 				<div class="panel-body">
 					@if (count($errors) > 0)
 						<div class="alert alert-danger">
@@ -48,6 +48,27 @@
 								<input type="password" class="form-control" name="password_confirmation">
 							</div>
 						</div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">First Line of Address (including house number)</label>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" name="first_address">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Town/City</label>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" name="town_city">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Postcode</label>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" name="postcode">
+                            </div>
+                        </div>
 
 						<div class="form-group">
 							<div class="col-md-6 col-md-offset-4">
