@@ -2,7 +2,7 @@
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller {
@@ -14,7 +14,10 @@ class PagesController extends Controller {
 	 */
 	public function index()
 	{
-		return view('pages.index');
+
+
+
+		return view('pages.index', compact('name'));
 	}
 
 	/**

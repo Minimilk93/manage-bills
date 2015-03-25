@@ -22,6 +22,8 @@ Route::controllers([
 ]);
 
 Route::get('/', 'PagesController@index');
+Route::get('/home', 'PagesController@index');
+
 
 $router->resource('providers', 'ProvidersController');
 
