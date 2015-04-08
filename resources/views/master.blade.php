@@ -26,12 +26,13 @@
                  <li><a href="/auth/register">Sign Up</a></li>
                  <li><a href="/auth/login">Sign In</a></li>
                  @else
+                 <li><a href ="/profile">My House</a></li>
                  <li><a href="/auth/logout">Log Out</a></li>
                  @endif
                  @if (Auth::guest())
                  <p>Hello, why not sign up?</p>
                  @else
-                 <p>Hello, {{ isset(Auth::user()->name) ? Auth::user()->name :  '' }}</p>
+                 <li>Hello, {{ isset(Auth::user()->name) ? Auth::user()->name :  '' }}</li>
                  @endif
             </ul>
 
