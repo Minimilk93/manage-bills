@@ -14,6 +14,7 @@ use Illuminate\Database\Eloquent\Model as Eloquent;
 
 class House extends Eloquent{
 
+    protected $fillable = ['first_line_address', 'city', 'postcode'];
 
     public function user()
     {

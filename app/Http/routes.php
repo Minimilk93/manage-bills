@@ -24,7 +24,9 @@ Route::controllers([
 Route::get('/', 'PagesController@index');
 Route::get('/home', 'PagesController@index');
 
+
 Route::get('/{profile}', 'ProfileController@show');
+Route::get('/{profile}/edit', 'ProfileController@edit');
 
 
 $router->resource('providers', 'ProvidersController');
