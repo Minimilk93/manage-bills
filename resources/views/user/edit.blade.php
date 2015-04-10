@@ -11,8 +11,7 @@
         </ul>
     </div>
 
-
-        {!! Form::model($user->house, ['url' => 'profile/'. $user->name]) !!}
+        {!! Form::model($user->house, ['url' => 'profile/' . $user->name, 'method' => 'PATCH']) !!}
 
         <div class ="form-group">
             {!! Form::label('first_line_address', 'First line of address:') !!}
@@ -26,7 +25,7 @@
 
         <div class ="form-group">
             {!! Form::label('postcode', 'Postcode:') !!}
-            {!! Form::textarea('postcode', null, ['class' => 'form-control'])!!}
+            {!! Form::text('postcode', null, ['class' => 'form-control'])!!}
         </div>
 
         <div class ="form-group">

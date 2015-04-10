@@ -10,7 +10,7 @@
                 <li><a href='#'>My Providers</a></li>
                 <li><a href='#'>My Bills</a></li>
                 @if (Auth::user()->id == $user->id)
-                <li><a href='/{profile}/edit'>Edit Profile</a></li>
+                <li><a href="/profile/{{ $user->name }}/edit">Edit Profile</a></li>
                 @endif
             </ul>
         </div>

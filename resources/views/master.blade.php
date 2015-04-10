@@ -11,7 +11,8 @@
 </head>
 
 <body style="padding:70px">
-
+<div id="wrapper">
+    <header>
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -19,14 +20,14 @@
                  <li><a href="/">Home</a></li>
                  <li><a href="/providers">Have Your Say</a></li>
                  <li><a href="/reviews">Provider Reviews</a></li>
-                 <li></li>
+                 <li><a href="/advice">Advice</a></li>
                 </ul>
             <ul class="nav navbar-nav navbar-right">
                  @if (Auth::guest())
                  <li><a href="/auth/register">Sign Up</a></li>
                  <li><a href="/auth/login">Sign In</a></li>
                  @else
-                 <li>{!! link_to('/'.Auth::user()->name, 'Your Profile') !!}</li>
+                 <li>{!! link_to('/profile/'.Auth::user()->name, 'Your Profile') !!}</li>
                  <li><a href="/auth/logout">Log Out</a></li>
                  @endif
                  @if (Auth::guest())
@@ -39,6 +40,7 @@
         </div>
         </div>
     </nav>
+    </header>
 
 
     <div class ="container">
@@ -49,7 +51,7 @@
     @yield('content')
 
 </div>
-
+</div>
 </body>
 
 </html>

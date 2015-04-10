@@ -48,13 +48,16 @@ class ProfileController extends Controller
      * @param  int $id
      * @return Response
      */
-    public function update($name)
+    public function update($name, Request $request)
     {
         $user = User::whereName($name)->first();
-        $input = Input::only('first_line_address', 'city', 'postcode');
 
-        $user->house->fill($input)->save();
+        $user->house->first_line_address = $request->get('first_line_address');
+        $user->house->city = $request->get('city');
+        $user->house->postcode = $request->get('postcode');
 
-        return redirect('user.edit');
+        $user->house->save();
+
+        return redirect('/');
     }
 }
