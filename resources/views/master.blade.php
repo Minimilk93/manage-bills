@@ -7,7 +7,7 @@
 
     <title>Document</title>
 
-    <link rel = "stylesheet" href="css\bootstrap.min.css">
+    <link rel = "Boostrap stylesheet" type = "text/css" href="\css\bootstrap.min.css">
 </head>
 
 <body>
@@ -41,7 +41,6 @@
         </div>
     </nav>
     </header>
-</div>
 
     @yield('content')
 

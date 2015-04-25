@@ -10,7 +10,7 @@ use App\House;
 
 class ProfileController extends Controller
 {
-
+    protected $house_id;
     /**
      * Display the specified resource.
      *
@@ -19,14 +19,24 @@ class ProfileController extends Controller
      * @param  int $id
      * @return Response
      */
-    public function show($name)
+
+    public function __construct(House $house_id)
     {
+        $this->house_id = $house_id;
+    }
+
+    public function show($name, House $house_id)
+    {
+
+        $query = User::with('house')->where($house_id)->first();
+        $users = User::where('house_id', 'LIKE', "%$query%")->get();
+
         try {
             $user = User::with('house')->whereName($name)->first();
         } catch (ModelNotFoundException $e) {
             return redirect::home();
         }
-        return view('user.show')->withUser($user);
+        return view('user.show')->withUser($user)->with('users', $users);
     }
 
     /**

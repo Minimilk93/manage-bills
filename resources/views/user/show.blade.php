@@ -19,7 +19,11 @@
 
         <div class ="bio">
 
+            @if ($user->house)
+
             {{ $user->house->first_line_address }}
+
+            @endif
 
             <p><img src ="https://upload.wikimedia.org/wikipedia/commons/2/24/House.svg"></p>
         </div>
