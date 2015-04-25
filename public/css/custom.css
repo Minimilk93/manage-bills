@@ -1,0 +1,54 @@
+/*! Profile image styling */
+.header-img {
+    z-index:100;
+    position:absolute;
+    color:white;
+    font-size:75px;
+    left:15px;
+    top:50px;
+    letter-spacing: -1px;
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+/*! Profile image styling */
+.quote-img{
+    position:absolute;
+    color:white;
+    font-size:15px;
+    right:15px;
+    top:550px;
+    letter-spacing: -1px;
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+/*! Profile image styling */
+.link-img{
+    position:absolute;
+    color:white;
+    font-size:15px;
+    left:15px;
+    top:180px;
+    letter-spacing: -1px;
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+/*! Profile image styling for link*/
+.link-img:hover{
+    color:#004A7F;
+    text-decoration: none;
+}
+
+/*! Section for profile information */
+#profileview{
+    padding-top:50px;
+}
+
+#profileview h1{
+    color:#004A7F;
+}

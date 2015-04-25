@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use App\User;
 use App\House;
 
+
 class ProfileController extends Controller
 {
     protected $house_id;
