@@ -36,7 +36,7 @@ $router->resource('reviews', 'ReviewsController');
 ## Profile routes which direct to the user profile using the username of the user that is logged in.
 $router->resource('profile', 'ProfileController', [
     'only' => [
-        'show', 'edit', 'update', 'patch'
+        'show', 'edit', 'update', 'patch', 'create',
     ]
 ]);
 

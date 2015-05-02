@@ -2,34 +2,12 @@
 
 @section('content')
 
-    <div class = "jumbotron">
-            <h1 class = "jumbotron header">Welcome to House Helper</h1>
+<div id = "home-cont">
+ {!! HTML::image('windfarm5.jpg', 'alt-text',  array('class' => 'homeimg')) !!}
+    <h2 class = "header-img">Utilities made easy.</h2>
+    <a class = "get-started" href = "/auth/register">Get Started</a>
+    <a  href = "/auth/login" class = "home-login">Login</a>
+</div>
 
-            <p class = "jumbotron body">A hub to serve your housing needs.</p>
-    </div>
 
-    <div class="container">
-
-    <div class = "row">
-        <div class = "col-md-4">
-            {!! HTML::image('Home.png', 'alt-text',  array( 'width' => 250, 'height' => 200, 'class' => 'homeimg')) !!}
-            <h3>Lorem Ipsum</h3>
-            <p>Lorem Ipsum</p>
-        </div>
-
-        <div class = "col-md-4">
-            {!! HTML::image('group.jpg', 'alt-text', array( 'width' => 250, 'height' => 200, 'text-align' => 'right' )) !!}
-            <h3>Lorem Ipsum</h3>
-            <p>Lorem Ipsum</p>
-        </div>
-
-        <div class = "col-md-4">
-            {!! HTML::image('question.png', 'alt-text', array( 'width' => 250, 'height' => 200, 'text-align' => 'right' )) !!}
-            <h3>Lorem Ipsum</h3>
-            <p>Lorem Ipsum</p>
-        </div>
-
-    </div>
-
-    </div>
 @stop

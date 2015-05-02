@@ -1,21 +1,40 @@
 @extends('master')
 
 @section('content')
-    {!! HTML::image('windfarm.jpg', 'alt-text',  array('width' => '100%', 'height' => 600, 'class' => 'homeimg')) !!}
-        <h2 class = "header-img">Profile</h2>
-            <a class = "link-img" href ="#profileview">Your Information</a>
-            <p class = "quote-img">The future is green energy, sustainability, renewable energy. - <i>Arnold Schwarzenegger</i></p>
+    {!! HTML::image('houses.jpg', 'alt-text',  array('class' => 'profileimg')) !!}
+    <h3 class = "profile-head">Your Profile</h3>
 
 
     <div class='container'>
-        <section id ="profileview">
-            <h1>{{ $user->name }}</h1>
-            <h3>{{ $user->email }}</h3>
 
-            <div class = "row">
+
+
+        <div class = "row">
+            <div class = "col-md-6">
+        <div id = "profile-icon">
+            {!! HTML::image('Home.png', 'alt-text',  array( 'width' => 100, 'height' => 50, 'class' => 'homeimg')) !!}
+        </div>
+        <div class = "profile-name">
+            <h2>Hello {{ $user->name }}!</h2>
+            <h5>{{ $user->email }}</h5>
+        </div>
+                <div class ="dashboard-profile">
+                    <ul>
+
+
+                        <li><a href='#'>My Providers</a></li>
+                        <li><a href='#'>My Bills</a></li>
+                        @if (Auth::user()->id == $user->id)
+                            <li><a href="/profile/{{ $user->name }}/edit">Edit Profile</a></li>
+                        @endif
+                    </ul>
+                </div>
+        </div>
+
+
                 <div class = "col-md-6">
                     @if ($user->house_id == null )
-                    <h1> You have not completed your profile. Please add a house to your account. </h1>
+                    <h1 class ="house-alert"> You have not completed your profile. Please add a house to your account. </h1>
                     @endif
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id vestibulum dolor, id interdum ipsum.
                         Integer nunc quam, mollis vitae commodo non, semper et nibh. Vestibulum sit amet sem tempus, vulputate turpis ac,
@@ -28,10 +47,8 @@
                         Fusce vestibulum libero augue, non ultricies diam scelerisque quis.</p>
                 </div>
 
-                <div class = "col-md-6">
-                    {!! HTML::image('Home.png', 'alt-text',  array( 'width' => 450, 'height' => 400, 'class' => 'homeimg')) !!}
-                </div>
-            </div>
+
+
             <!--    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
            <ul class="nav navbar-nav">
@@ -45,7 +62,7 @@
             </ul>-->
         </div>
 
-        </section>
+
 
         <div class ="bio">
 

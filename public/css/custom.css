@@ -1,14 +1,30 @@
+
+#home-cont{
+    max-width: 100%;
+    max-height: 100%;
+    overflow:hidden;
+    position: absolute;
+
+}
+
+.homeimg{
+    height: auto;
+    max-width: 100%;
+
+}
+
+
+
 /*! Profile image styling */
 .header-img {
     z-index:100;
     position:absolute;
     color:white;
-    font-size:75px;
-    left:15px;
+    font-size:60px;
+    left:10px;
     top:50px;
     letter-spacing: -1px;
-    background: rgb(0, 0, 0); /* fallback color */
-    background: rgba(0, 0, 0, 0.7);
+    border-bottom: solid 3px;
     padding: 10px;
 }
 
@@ -44,6 +60,49 @@
     text-decoration: none;
 }
 
+.get-started{
+    position:absolute;
+    color:#fff;
+    font-size:25px;
+    left:30px;
+    top:170px;
+    letter-spacing: -1px;
+    border-radius: 10px;
+    border: 2px solid #004A7F;
+    background: #004A7F;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.get-started:hover{
+    text-decoration: none;
+    color:#fff;
+    border: 2px solid #002e63;
+    background: #002e63;
+
+}
+
+.home-login{
+    position:absolute;
+    color:#004A7F;
+    font-size:25px;
+    left:200px;
+    top:170px;
+    letter-spacing: -1px;
+    border-radius: 10px;
+    border: 2px solid #004A7F;
+    background: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.home-login:hover{
+    text-decoration: none;
+    color: #002e63;
+    border: 2px solid #002e63;
+
+
+}
 /*! Section for profile information */
 #profileview{
     padding-top:50px;
@@ -51,4 +110,175 @@
 
 #profileview h1{
     color:#004A7F;
+}
+
+#profile-icon{
+
+    display:inline-block
+}
+
+.profile-name{
+
+    display:inline-block
+}
+
+.profileimg{
+    width:100%
+}
+
+.profile-head{
+    z-index:100;
+    position:absolute;
+    color:white;
+    font-size:45px;
+    left:10px;
+    top:50px;
+    letter-spacing: -1px;
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+.house-alert {
+    color: #004A7F;
+}
+
+.have-your-sayimg{
+    float:right;
+    padding-top:100px;
+}
+
+.have-button{
+    position:absolute;
+    left:100px;
+    top:225px;
+    color:#fff;
+    font-size:25px;
+    letter-spacing: -1px;
+    border-radius: 10px;
+    border: 2px solid #004A7F;
+    background: #004A7F;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.provider-have-button{
+    position:absolute;
+    left:350px;
+    top:225px;
+    color:#fff;
+    font-size:25px;
+    letter-spacing: -1px;
+    border-radius: 10px;
+    border: 2px solid #004A7F;
+    background: #004A7F;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.p-overlay{
+    position:absolute;
+    left:20px;
+    top:300px;
+    color:#fff;
+    font-size:15px;
+    letter-spacing: -1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width:50%;
+    line-height: 170%;
+}
+
+.have-button:hover{
+    text-decoration: none;
+    color:#fff;
+    border: 2px solid #002e63;
+    background: #002e63;
+}
+
+#provider-list{
+    margin-left:50px;
+    list-style-type: none;
+}
+
+#provider-list h1{
+    text-align:center;
+    color:#004A7F;
+    margin-top:100px;
+    margin-bottom:25px;
+    padding-bottom:20px;
+    border-bottom: solid 2px;
+}
+
+#provider-list a:hover{
+    background-color: #004A7F;
+    color: #fff;
+}
+
+.header-overlay{
+    position:absolute;
+    left:15px;
+    top:75px;
+    font-size:60px;
+    color:#fff;
+    margin-bottom:30px;
+    border-bottom: solid 3px;
+    padding:20px;
+}
+
+.providers-img{
+    -webkit-filter: brightness(50%);
+    max-width:100%;
+}
+
+.provider-link {
+    color:#fff;
+    font-size:25px;
+    letter-spacing: -1px;
+    border-radius: 10px;
+    border: 2px solid #004A7F;
+    background: #004A7F;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left:32%;
+}
+
+.list-group{
+    margin-top:25px;
+}
+
+#review-container{
+
+    width:100%;
+    height:100%;
+    
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+}
+
+#review-holder{
+    background-color: #fff;
+    height:100%;
+
+
+}
+
+#review-wrapper{
+    margin-top:100px;
+    height:100%;
+    margin-left:150px;
+    margin-right:150px;
+    background-color: #fff;
+    padding:20px;
+
+
+}
+
+.review-back{
+    width:100%;
+    height:100%;
 }

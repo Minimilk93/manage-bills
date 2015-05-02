@@ -1,9 +1,12 @@
 @extends('master')
 
 @section('content')
+<div style = "background-image: url('power.jpg')" id = "review-container">
 
     <h2>Provider Reviews</h2>
 
+    <div id="review-wrapper">
+    <div id = "review-holder">
     {!! Form::open(['method' => 'GET']) !!}
     <div class="form-group">
 
@@ -26,8 +29,10 @@
             </tr>
         </table>
     @endforeach
+    </div>
+    </div>
 
-
+</div>
 
 
 

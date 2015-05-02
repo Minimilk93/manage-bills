@@ -31,11 +31,7 @@
                  <li>{!! link_to('/profile/'.Auth::user()->name, 'Your Profile') !!}</li>
                  <li><a href="/auth/logout">Log Out</a></li>
                  @endif
-                 @if (Auth::guest())
-                 <p>Hello, why not sign up?</p>
-                 @else
-                 <li>Hello, {{ isset(Auth::user()->name) ? Auth::user()->name :  '' }}</li>
-                 @endif
+
             </ul>
 
         </div>
