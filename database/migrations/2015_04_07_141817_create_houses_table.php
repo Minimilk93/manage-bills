@@ -15,7 +15,7 @@ class CreateHousesTable extends Migration {
         Schema::create('houses', function(Blueprint $table)
         {
             $table->increments('id');
-            $table->integer('user_id');
+            $table->integer('user_id')->nullable();
             $table->string('first_line_address');
             $table->string('city');
             $table->string('postcode');
@@ -24,6 +24,7 @@ class CreateHousesTable extends Migration {
             $table->foreign('user_id')->references('id')->on('users');
         });
 	}
+
 
 	/**
 	 * Reverse the migrations.

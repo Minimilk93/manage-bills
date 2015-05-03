@@ -20,4 +20,9 @@ class House extends Eloquent{
     {
         return $this->belongsToMany('App\User');
     }
+
+    public function bills()
+    {
+        return $this->belongsToMany('Bills');
+    }
 }

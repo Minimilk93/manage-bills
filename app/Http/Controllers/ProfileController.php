@@ -1,17 +1,19 @@
 <?php namespace App\Http\Controllers;
 
-use App\Http\Requests;
+
 use App\Http\Controllers\Controller;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Requests;
 use Illuminate\Http\Request;
 use App\User;
 use App\House;
-
+use App\Http\Requests\CreateProfileRequest;
 
 class ProfileController extends Controller
 {
     protected $house_id;
+    protected $name;
     /**
      * Display the specified resource.
      *
@@ -21,9 +23,9 @@ class ProfileController extends Controller
      * @return Response
      */
 
-    public function __construct(House $house_id)
+    public function __construct(Request $request)
     {
-        $this->house_id = $house_id;
+
     }
 
     public function show($name, House $house_id)
@@ -54,6 +56,28 @@ class ProfileController extends Controller
     }
 
     /**
+     * Show a form to create a house for a specified user.
+     *
+     */
+
+
+    public function store(Request $request)
+    {
+        $name = Auth::user()->name;
+        $user = User::whereName($name)->first();
+
+
+        $house = new House();
+        $house->first_line_address = $request->get('first_line_address');
+        $house->city = $request->get('city');
+        $house->postcode = $request->get('postcode');
+
+        $user->house()->save($house);
+
+        return redirect('/');
+
+    }
+    /**
      * Update the specified resource in storage.
      *
      * @param  int $id
@@ -63,12 +87,14 @@ class ProfileController extends Controller
     {
         $user = User::whereName($name)->first();
 
-        $user->house->first_line_address = $request->get('first_line_address');
-        $user->house->city = $request->get('city');
-        $user->house->postcode = $request->get('postcode');
+
+        $user ->house = new House();
+        $user ->house->first_line_address = $request->get('first_line_address');
+        $user ->house->city = $request->get('city');
+        $user ->house->postcode = $request->get('postcode');
 
         $user->house->save();
 
         return redirect('/');
-    }
+   }
 }

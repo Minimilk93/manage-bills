@@ -4,14 +4,7 @@
     <div class='container'>
     <h3>Edit Your Profile</h3>
 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-            <li><a href='#'>My Providers</a></li>
-            <li><a href='#'>My Bills</a></li>
-        </ul>
-    </div>
-
-        {!! Form::model($user->house, ['url' => 'profile/' . $user->name, 'method' => 'PATCH']) !!}
+        {!! Form::model($user->house, ['route' => 'profile.store']) !!}
 
         <div class ="form-group">
             {!! Form::label('first_line_address', 'First line of address:') !!}

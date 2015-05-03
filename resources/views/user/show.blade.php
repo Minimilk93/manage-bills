@@ -33,7 +33,7 @@
 
 
                 <div class = "col-md-6">
-                    @if ($user->house_id == null )
+                    @if ($user->house->id == null )
                     <h1 class ="house-alert"> You have not completed your profile. Please add a house to your account. </h1>
                     @endif
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id vestibulum dolor, id interdum ipsum.
