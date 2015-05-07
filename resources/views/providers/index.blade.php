@@ -4,6 +4,8 @@
 
         {!! HTML::image('person.jpg', 'alt-text',  array('class' => 'providers-img')) !!}
 
+        <div class = "IE-Overlay"></div>
+
         <h1 class = "header-overlay">Make the right choice</h1>
 
         <a class = "have-button" href = "/reviews">See all reviews</a>

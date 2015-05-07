@@ -146,6 +146,7 @@
 .have-your-sayimg{
     float:right;
     padding-top:100px;
+
 }
 
 .have-button{
@@ -187,6 +188,18 @@
     padding-right: 20px;
     width:50%;
     line-height: 170%;
+
+}
+
+.IE-Overlay{
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+    height:100%;
+    width:100%;
+    position:absolute;
+
+    opacity:0.5;
+    top:0px;
 }
 
 .have-button:hover{
@@ -227,7 +240,9 @@
 }
 
 .providers-img{
-    -webkit-filter: brightness(50%);
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+    height:100%;
     max-width:100%;
 }
 
