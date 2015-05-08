@@ -28,18 +28,15 @@ class ProfileController extends Controller
 
     }
 
-    public function show($name, House $house_id)
+    public function show($name)
     {
-
-        $query = User::with('house')->where($house_id)->first();
-        $users = User::where('house_id', 'LIKE', "%$query%")->get();
 
         try {
             $user = User::with('house')->whereName($name)->first();
         } catch (ModelNotFoundException $e) {
             return redirect::home();
         }
-        return view('user.show')->withUser($user)->with('users', $users);
+        return view('user.show')->withUser($user);
     }
 
     /**

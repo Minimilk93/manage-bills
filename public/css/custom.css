@@ -310,11 +310,16 @@
 
 .search{
     margin-left:5%;
-    width:80%;
+    width:100%;
     background-repeat: no-repeat;
     background-size: 25px 30px;
     padding:6px 15px 6px 30px;
     border:1px solid #acb1b7;
+}
+
+.searchlabel{
+
+    width:80%;
 }
 
 .search-button{

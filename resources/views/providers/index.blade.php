@@ -29,14 +29,14 @@
                 <h1>Find your provider.</h1>
 
                 <a class = "provider-link" href = "/providers/create">Add a Provider</a>
-                    <div class="list-group">
+                    <ul class="list-group">
 
                         @foreach ($providers as $provider)
 
                             <li><a class="list-group-item" href="/providers/{{ $provider->slug }}">{{ $provider->name }}</a></li>
 
                         @endforeach
-                    </div>
+                    </ul>
             </div>
 
         <div class = "row">

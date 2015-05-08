@@ -4,7 +4,6 @@
     {!! HTML::image('houses.jpg', 'alt-text',  array('class' => 'profileimg')) !!}
     <h3 class = "profile-head">Your Profile</h3>
 
-
     <div class='container'>
 
 
@@ -33,7 +32,7 @@
 
 
                 <div class = "col-md-6">
-                    @if ($user->house->id == null )
+                    @if ($user->house == null )
                     <h1 class ="house-alert"> You have not completed your profile. Please add a house to your account. </h1>
                     @endif
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id vestibulum dolor, id interdum ipsum.
@@ -46,29 +45,15 @@
                         lacus tellus euismod dolor, in mollis velit nisl nec lectus.
                         Fusce vestibulum libero augue, non ultricies diam scelerisque quis.</p>
                 </div>
-
-
-
-            <!--    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-           <ul class="nav navbar-nav">
-                <h3>My Profile</h3>
-                <p>{{ $user->name }}</p>
-                <li><a href='#'>My Providers</a></li>
-                <li><a href='#'>My Bills</a></li>
-                @if (Auth::user()->id == $user->id)
-                <li><a href="/profile/{{ $user->name }}/edit">Edit Profile</a></li>
-                @endif
-            </ul>-->
         </div>
 
 
 
         <div class ="bio">
 
-            @if ($user->house)
+            @if ($user->house == true)
 
-            {{ $user->house->first_line_address }}
+                {{ $user->house->first_line_address }}
 
             @endif
 

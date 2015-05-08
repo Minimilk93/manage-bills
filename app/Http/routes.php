@@ -26,11 +26,11 @@ Route::controllers([
 ## General pages which are available on the website home, advice etc.
 Route::get('/', 'PagesController@index');
 Route::get('/home', 'PagesController@index');
-
+Route::get('/advice', 'PagesController@advice');
 ## Using route resources for providers which provides a list of routes suitable.
 $router->resource('providers', 'ProvidersController');
 
-## Using route resources for reviews which provides a list of reviews suitable.
+## Using route resources for reviews which provideRs a list of reviews suitable.
 $router->resource('reviews', 'ReviewsController');
 
 ## Profile routes which direct to the user profile using the username of the user that is logged in.

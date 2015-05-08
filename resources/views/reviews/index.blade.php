@@ -10,9 +10,10 @@
         <h1 class = "review-head">Reviews by you</h1>
     {!! Form::open(['method' => 'GET']) !!}
     <div class="form-group" >
-
+        <label class="searchlabel">
         <input class="search" style = "background-image: url('System-search.jpg')" placeholder="Search by provider or location..." name="q" type="search">
-        <button type="submit" class="search-button">
+        </label>
+            <button type="submit" class="search-button">
             Search
         </button>
     </div>
