@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: Shelby
- * Date: 02/04/2015
- * Time: 16:21
+ * Date: 09/05/2015
+ * Time: 15:18
  */
 
 namespace App;
@@ -11,7 +11,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
 
-class Bills extends Eloquent {
+class Bill extends Eloquent{
 
     public function user()
     {
