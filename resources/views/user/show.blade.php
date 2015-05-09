@@ -11,18 +11,19 @@
         <div class = "row">
             <div class = "col-md-6">
         <div id = "profile-icon">
-            {!! HTML::image('Home.png', 'alt-text',  array( 'width' => 100, 'height' => 50, 'class' => 'homeimg')) !!}
+            {!! HTML::image('house-icon.png', 'alt-text',  array( 'width' => 200, 'height' => 100, 'class' => 'homeimg')) !!}
         </div>
         <div class = "profile-name">
             <h2>Hello {{ $user->name }}!</h2>
             <h5>{{ $user->email }}</h5>
         </div>
                 <div class ="dashboard-profile">
-                    <ul>
 
-
-                        <li><a href='#'>My Providers</a></li>
-                        <li><a href='#'>My Bills</a></li>
+                    <ul class="profile_nav ">
+                        <li class="profile_head">House Options</li>
+                        <li><a href='/profile/{{ $user->name }}'>My Profile</a></li>
+                        <li><a href='/profile/{{ $user->name }}/bills'>My Bills</a></li>
+                        <li><a href='/profile/{{ $user->name }}/add-bills'>Add a Bill</a></li>
                         @if (Auth::user()->id == $user->id)
                             <li><a href="/profile/{{ $user->name }}/edit">Edit Profile</a></li>
                         @endif
@@ -35,6 +36,16 @@
                     @if ($user->house == null )
                     <h1 class ="house-alert"> You have not completed your profile. Please add a house to your account. </h1>
                     @endif
+
+                        <div class ="bio">
+
+                            @if ($user->house == true)
+
+                                <h1>{{ $user->house->first_line_address }}, {{ $user->house->city }}</h1>
+
+                            @endif
+
+                        </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id vestibulum dolor, id interdum ipsum.
                         Integer nunc quam, mollis vitae commodo non, semper et nibh. Vestibulum sit amet sem tempus, vulputate turpis ac,
                         pretium nisl. Sed ornare enim eget tincidunt auctor. Aliquam et quam vitae ex vehicula commodo id non turpis.
@@ -49,15 +60,7 @@
 
 
 
-        <div class ="bio">
 
-            @if ($user->house == true)
-
-                {{ $user->house->first_line_address }}
-
-            @endif
-
-        </div>
 
     </div>
 @stop

@@ -139,6 +139,41 @@
     padding: 10px;
 }
 
+.profile_nav{
+    margin-top:20px;
+    list-style-type: none;
+}
+
+.profile_nav a:link, a:visited{
+    display: block;
+    width: 60%;
+    padding:10px;
+    margin-right:50px;
+    text-decoration: none;
+    color: #000;
+}
+
+.profile_nav a:hover{
+    border-left: solid 3px #004A7F;
+    color: #004A7F;
+
+}
+
+.bio h1{
+    text-align:center;
+    color: #004A7F;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.profile_head{
+    padding:10px;
+    font-size:15px;
+    background-color: #004A7F;
+    color: #fff;
+    width:40%;
+    font-weight:bold;
+}
 .house-alert {
     color: #004A7F;
 }

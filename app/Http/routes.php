@@ -36,3 +36,5 @@ $router->resource('reviews', 'ReviewsController');
 ## Profile routes which direct to the user profile using the username of the user that is logged in.
 $router->resource('profile', 'ProfileController');
 
+Route::get('/profile/{profile}/bills', 'BillsController@index');
+Route::get('/profile/{profile}/add-bills', 'BillsController@show');
