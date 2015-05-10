@@ -15,7 +15,7 @@ class CreateBillsTable extends Migration {
 		Schema::create('bills', function(Blueprint $table)
 		{
 			$table->increments('id');
-            $table->integer('house_id')->nullable();
+            $table->integer('user_id')->nullable();
             $table->string('bill_name');
             $table->datetime('bill_date');
             $table->integer('bill_amount');
@@ -24,7 +24,7 @@ class CreateBillsTable extends Migration {
             $table->integer('bill_shared');
 			$table->timestamps();
 
-            $table->foreign('house_id')->references('id')->on('houses');
+            $table->foreign('user_id')->references('id')->on('users');
 		});
 	}
 

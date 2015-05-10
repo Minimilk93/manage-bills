@@ -13,8 +13,12 @@ use Illuminate\Database\Eloquent\Model as Eloquent;
 
 class Bill extends Eloquent{
 
+    protected $table = 'bills';
+
+    protected $fillable = ['bill_name', 'bill_amount', 'bill_shared', 'bill_comments', 'bill_divide', 'bill_date'];
+
     public function user()
     {
-        return $this->belongsTo('House');
+        return $this->belongsTo('App\User');
     }
 }

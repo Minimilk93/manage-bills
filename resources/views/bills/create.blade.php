@@ -32,20 +32,28 @@
 
             <div class = "col-md-6">
 
+                <div class ="bio">
+
+
+
+                        <h1>Add a Bill</h1>
+
+                </div>
+                {!! Form::open(['route' => 'bill.store']) !!}
 
                 <div class ="form-group">
                     {!! Form::label('bill_name', 'Bill Name:') !!}
-                    {!! Form::text('bill_name', null, ['class' => 'form-control'])!!}
+                    {!! Form::text('bill_name', null, ['required', 'class' => 'form-control'])!!}
                 </div>
 
                 <div class ="form-group">
                     {!! Form::label('bill_date', 'Date of Bill:') !!}
-                    {!! Form::text('bill_date', null, ['class' => 'form-control'])!!}
+                    {!! Form::text('bill_date', null, ['required', 'class' => 'form-control'])!!}
                 </div>
 
                 <div class ="form-group">
                     {!! Form::label('bill_amount', 'Bill Amount:') !!}
-                    {!! Form::text('bill_amount', null, ['class' => 'form-control'])!!}
+                    {!! Form::text('bill_amount', null, ['required', 'class' => 'form-control'])!!}
                 </div>
 
                 <div class ="form-group">
@@ -55,14 +63,13 @@
 
                 <div class ="form-group">
                     {!! Form::label('bill_divide', 'Amount of people to be shared by:') !!}
-                    {!! Form::text('bill_divide', null, ['class' => 'form-control'])!!}
+                    {!! Form::text('bill_divide', null, ['required', 'class' => 'form-control'])!!}
+                    <a onclick="DivideFunction()">Divide It!</a>
                 </div>
-
-                <a onclick="DivideFunction()">Divide It!</a>
 
                 <div class ="form-group">
                     {!! Form::label('bill_shared', 'Amount owed by each person who used utility:') !!}
-                    {!! Form::text('bill_shared', null, ['class' => 'form-control'])!!}
+                    {!! Form::text('bill_shared', null, ['required', 'class' => 'form-control'])!!}
                 </div>
 
                 <div class ="form-group">

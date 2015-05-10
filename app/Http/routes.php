@@ -38,3 +38,5 @@ $router->resource('profile', 'ProfileController');
 
 Route::get('/profile/{profile}/bills', 'BillsController@index');
 Route::get('/profile/{profile}/add-bills', 'BillsController@show');
+
+$router->resource('bill', 'BillsController');

@@ -31,7 +31,27 @@
 
 
         <div class = "col-md-6">
+            @foreach($bills as $bill)
+                <table class="bills-table">
+                    <tr class="bills-row">
+                        <th class="bills-head">Bill Name</th>
+                        <th class="bills-head">Bill Date</th>
+                        <th class="bills-head">Bill Amount</th>
+                        <th class="bills-head">Bill Comments</th>
+                        <th class="bills-head">Bill Divided By</th>
+                        <th class="bills-head">Bill Share Amount</th>
+                    </tr>
+                    <tr class="bills-row">
+                        <td>{{$bill->bill_name}}</td>
+                        <td>{{$bill->bill_date}}</td>
+                        <td>{{$bill->bill_amount}}</td>
+                        <td>{{$bill->bill_comments}}</td>
+                        <td>{{$bill->bill_divide}}</td>
+                        <td>{{$bill->bill_shared }}</td>
 
+                    </tr>
+                </table>
+            @endforeach
         </div>
     </div>
 

@@ -10,3 +10,5 @@ function DivideFunction() {
     var amount = document.getElementById("bill_shared");
     amount.value = "£" + z;
 }
+
+
