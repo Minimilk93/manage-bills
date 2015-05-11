@@ -12,11 +12,20 @@ Laravel is accessible, yet powerful, providing powerful tools needed for large, 
 
 ## Official Documentation
 
+This is a project developed by a student at the University of Leeds for managing bills in shared households.
+
 Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
 
-## Contributing
+## Installation
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+The installation guide can be found in the [Laravel documentation](http://laravel.com/docs/5.0).
+This will allow you to run the Laravel development server to run the project.
+Please note that PHP will be needed on your machine to run Laravel.
+
+## Using the Web Application
+
+The web application can be simply used by creating a profile from the navigation bar.
+Once within the profile area, you can follow the instructions to create bills for an account.
 
 ### License
 
