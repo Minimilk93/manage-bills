@@ -7,7 +7,7 @@
     <div class='container'>
 
     <div class = "row">
-        <div class = "col-md-6">
+        <div class = "col-md-5">
             <div id = "profile-icon">
                 {!! HTML::image('house-icon.png', 'alt-text',  array( 'width' => 200, 'height' => 100, 'class' => 'homeimg')) !!}
             </div>
@@ -30,24 +30,39 @@
         </div>
 
 
-        <div class = "col-md-6">
+        <div class = "col-md-7">
+
+            <div class ="bio">
+
+
+
+                <h1>Your Bills</h1>
+
+                <p>This is where you can view your bills. Go ahead! Create a bill from using the left hand menu!</p>
+
+            </div>
+
+
+
+
             @foreach($bills as $bill)
-                <table class="bills-table">
+
+                <table class="table">
                     <tr class="bills-row">
-                        <th class="bills-head">Bill Name</th>
-                        <th class="bills-head">Bill Date</th>
-                        <th class="bills-head">Bill Amount</th>
-                        <th class="bills-head">Bill Comments</th>
-                        <th class="bills-head">Bill Divided By</th>
-                        <th class="bills-head">Bill Share Amount</th>
+                        <th class="bills-med">Bill Name</th>
+                        <th class="bills-med">Bill Date</th>
+                        <th class="bills-small">Bill Amount</th>
+                        <th class="bills-large">Bill Comments</th>
+                        <th class="bills-small">Bill Divided By</th>
+                        <th class="bills-small">Bill Share Amount</th>
                     </tr>
                     <tr class="bills-row">
-                        <td>{{$bill->bill_name}}</td>
-                        <td>{{$bill->bill_date}}</td>
-                        <td>{{$bill->bill_amount}}</td>
-                        <td>{{$bill->bill_comments}}</td>
-                        <td>{{$bill->bill_divide}}</td>
-                        <td>{{$bill->bill_shared }}</td>
+                        <td class="bills-med">{{$bill->bill_name}}</td>
+                        <td class="bills-med">{{$bill->bill_date}}</td>
+                        <td class="bills-small">{{$bill->bill_amount}}</td>
+                        <td class="bills-large">{{$bill->bill_comments}}</td>
+                        <td class="bills-small">{{$bill->bill_divide}}</td>
+                        <td class="bills-small">{{$bill->bill_shared }}</td>
 
                     </tr>
                 </table>

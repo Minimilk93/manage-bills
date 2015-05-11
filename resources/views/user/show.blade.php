@@ -34,7 +34,7 @@
 
                 <div class = "col-md-6">
                     @if ($user->house == null )
-                    <h1 class ="house-alert"> You have not completed your profile. Please add a house to your account. </h1>
+                    <h1 class ="house-alert"> You have not completed your profile. Please add a house to your account by using the 'Edit Profile' option. </h1>
                     @endif
 
                         <div class ="bio">

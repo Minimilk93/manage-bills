@@ -60,7 +60,29 @@
     text-decoration: none;
 }
 
-.get-started{
+.get-started-button{
+    position:absolute;
+    color:#fff;
+    font-size:25px;
+    left:60px;
+    top:170px;
+    letter-spacing: -1px;
+    border-radius: 10px;
+    border: 2px solid #004A7F;
+    background: #004A7F;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.get-started-button:hover{
+    text-decoration: none !important;
+    color:#fff !important;
+    border: 2px solid #002e63 !important;
+    background: #002e63 !important;
+
+}
+
+.get-started-button:visited{
     position:absolute;
     color:#fff;
     font-size:25px;
@@ -72,13 +94,6 @@
     background: #004A7F;
     padding-left: 20px;
     padding-right: 20px;
-}
-
-.get-started:hover{
-    text-decoration: none;
-    color:#fff;
-    border: 2px solid #002e63;
-    background: #002e63;
 
 }
 
@@ -97,9 +112,9 @@
 }
 
 .home-login:hover{
-    text-decoration: none;
-    color: #002e63;
-    border: 2px solid #002e63;
+    text-decoration: none !important;
+    color: #002e63 !important;
+    border: 2px solid #002e63 !important;
 
 
 }
@@ -188,7 +203,7 @@
     position:absolute;
     left:100px;
     top:225px;
-    color:#fff;
+    color:#fff !important;
     font-size:25px;
     letter-spacing: -1px;
     border-radius: 10px;
@@ -202,7 +217,7 @@
     position:absolute;
     left:350px;
     top:225px;
-    color:#fff;
+    color:#fff !important;
     font-size:25px;
     letter-spacing: -1px;
     border-radius: 10px;
@@ -282,7 +297,7 @@
 }
 
 .provider-link {
-    color:#fff;
+    color:#fff !important;
     font-size:25px;
     letter-spacing: -1px;
     border-radius: 10px;
@@ -400,4 +415,46 @@
     border-bottom: solid 1px;
     font-size: 60px;
 
+}
+
+
+.bills-table{
+    margin-top:20px;
+    border:solid 2px;
+    text-align:center;
+}
+
+.table th{
+   font-weight:bold;
+    color: #fff;
+    background-color: #004A7F;
+}
+
+.bills-small{
+    width:100px;
+
+    text-align:center;
+}
+
+.bills-med{
+    width:110px;
+    padding:5px;
+
+    text-align:center;
+
+}
+
+.bills-large{
+    width:150px;
+
+    text-align:center;
+}
+
+.bio p{
+    text-align:center;
+}
+
+.form-title{
+    text-align:center;
+    margin-top:100px;
 }

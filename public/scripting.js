@@ -11,4 +11,3 @@ function DivideFunction() {
     amount.value = "£" + z;
 }
 
-

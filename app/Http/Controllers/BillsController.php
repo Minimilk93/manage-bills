@@ -18,23 +18,15 @@ class BillsController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function index(Request $request)
+	public function index()
 	{
         $name = Auth::user()->name;
         $user = User::with('house')->whereName($name)->first();
         $id = Auth::id();
 
-        $query = $request->get('q');
 
-        if ($query) {
-            $bills = Bill::where('bill_name', 'LIKE', "%$query%")
-                ->orWhere('bill_date', 'LIKE', "%$query%")->get();
-        }
-        else
-        {
             $bills = Bill::where('user_id', $id)->get();
 
-        }
 
 		return view ('bills.show')->withBills($bills)->withUser($user);
 	}
@@ -72,6 +64,7 @@ class BillsController extends Controller {
 
         $bill->save();
 
+        return redirect()->route('bill.index');
 	}
 
 	/**

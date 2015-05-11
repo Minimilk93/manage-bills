@@ -71,7 +71,7 @@ class ProfileController extends Controller
 
         $user->house()->save($house);
 
-        return redirect('/');
+        return redirect()->route('profile.index');
 
     }
     /**
