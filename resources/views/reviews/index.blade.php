@@ -25,9 +25,9 @@
 
 
     @foreach($reviews as $review)
-        <table class="table-review">
+        <table class="table">
 
-            <tr class="info">
+            <tr class="bills-large">
                 <th style="width:50%"><b>Utility Used: </b>{{$review->utility}}</th>
                 <th style="width:50%"><b>Location: </b>{{$review->location}}</th>
 

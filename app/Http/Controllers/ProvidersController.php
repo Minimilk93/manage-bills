@@ -14,6 +14,8 @@ class ProvidersController extends Controller {
     /**
      * Display a listing of the resource.
      *
+     * Displays the providers 'have your say' page.
+     *
      * @return Response
      */
     public function index(Provider $provider)
@@ -23,6 +25,8 @@ class ProvidersController extends Controller {
     }
     /**
      * Show the form for creating a new resource.
+     *
+     * Form for creating a new provider.
      *
      * @return Response
      */
@@ -44,6 +48,8 @@ class ProvidersController extends Controller {
     }
     /**
      * Display the specified resource.
+     *
+     * Show a specific provider. Information pulled through.
      *
      * @param  int  $id
      * @return Response

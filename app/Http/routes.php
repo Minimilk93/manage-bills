@@ -36,7 +36,9 @@ $router->resource('reviews', 'ReviewsController');
 ## Profile routes which direct to the user profile using the username of the user that is logged in.
 $router->resource('profile', 'ProfileController');
 
+## Profile bill routes which direct to bill methods.
 Route::get('/profile/{profile}/bills', 'BillsController@index');
 Route::get('/profile/{profile}/add-bills', 'BillsController@show');
 
+## Bill resource to provide all routes for the bill controller.
 $router->resource('bill', 'BillsController');

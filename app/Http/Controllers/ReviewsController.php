@@ -10,6 +10,9 @@ class ReviewsController extends Controller {
 
 	/**
 	 * Display a listing of the resource.
+     *
+     * Search query takes 'q' and queries it against the database.
+     * Otherwise the entire reviews entries are displayed.
 	 *
 	 * @return Response
 	 */
@@ -41,6 +44,8 @@ class ReviewsController extends Controller {
 
 	/**
 	 * Store a newly created resource in storage.
+     *
+     * Stores new review inputs from the request class.
 	 *
 	 * @return Response
 	 */

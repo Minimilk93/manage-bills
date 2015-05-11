@@ -54,6 +54,7 @@ class ProfileController extends Controller
 
     /**
      * Show a form to create a house for a specified user.
+     * Stores the house request information and sets the fields to a new house model.
      *
      */
 

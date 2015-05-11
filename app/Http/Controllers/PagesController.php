@@ -10,6 +10,7 @@ class PagesController extends Controller {
 	/**
 	 * Display a listing of the resource.
 	 *
+     * Display the index page of the web application.
 	 * @return Response
 	 */
 	public function index()
@@ -22,6 +23,7 @@ class PagesController extends Controller {
 
 	/**
 	 * Show advice page.
+     *
 	 *
 	 * @return Response
 	 */
@@ -32,6 +34,7 @@ class PagesController extends Controller {
 
 	/**
 	 * Store a newly created resource in storage.
+     *
 	 *
 	 * @return Response
 	 */

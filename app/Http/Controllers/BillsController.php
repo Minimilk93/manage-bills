@@ -15,6 +15,10 @@ class BillsController extends Controller {
 
 	/**
 	 * Display a listing of the resource.
+     * Pull the user data along with the house data through.
+     *
+     * To get the bills data we use a query on the database to pull fields with the same id as
+     * the currently signed in user.
 	 *
 	 * @return Response
 	 */
@@ -43,6 +47,7 @@ class BillsController extends Controller {
 
 	/**
 	 * Store a newly created resource in storage.
+     * We take the fields from the user request and set the to fields of a new bill in the Bill eloquent model.
 	 *
 	 * @return Response
 	 */
@@ -81,37 +86,6 @@ class BillsController extends Controller {
         return view ('bills.create')->withUser($user)->withHouse($house);
 	}
 
-	/**
-	 * Show the form for editing the specified resource.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function edit($id)
-	{
-		//
-	}
 
-	/**
-	 * Update the specified resource in storage.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function update($id)
-	{
-		//
-	}
-
-	/**
-	 * Remove the specified resource from storage.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function destroy($id)
-	{
-		//
-	}
 
 }

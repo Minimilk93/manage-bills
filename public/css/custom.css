@@ -1,4 +1,4 @@
-
+/*! Home container styling */
 #home-cont{
     max-width: 100%;
     max-height: 100%;
@@ -7,13 +7,12 @@
 
 }
 
+/*! Home image styling */
 .homeimg{
     height: auto;
     max-width: 100%;
 
 }
-
-
 
 /*! Profile image styling */
 .header-img {
@@ -60,6 +59,7 @@
     text-decoration: none;
 }
 
+/*! Styling of button on home page */
 .get-started-button{
     position:absolute;
     color:#fff;
@@ -97,6 +97,7 @@
 
 }
 
+/*! Home button styling */
 .home-login{
     position:absolute;
     color:#004A7F;
@@ -193,6 +194,7 @@
     color: #004A7F;
 }
 
+/*! Providers page styling */
 .have-your-sayimg{
     float:right;
     padding-top:100px;
@@ -241,6 +243,7 @@
 
 }
 
+/*! IE edits to ensure compatibility */
 .IE-Overlay{
     background: rgb(0, 0, 0); /* fallback color */
     background: rgba(0, 0, 0, 0.7);
@@ -312,6 +315,7 @@
     margin-top:25px;
 }
 
+/*! Reviews section styling */
 #review-container{
 
     width:100%;
@@ -335,11 +339,10 @@
 #review-wrapper{
     margin-top:100px;
     height:100%;
-    margin-left:170px;
-    margin-right:170px;
+    margin-left:100px;
+    margin-right:100px;
     background-color: #fff;
-    padding:20px 10px 20px 10px;
-    border-radius: 15px;
+    padding:20px 30px 20px 30px;
     border:1px solid #acb1b7;
 
 
@@ -359,7 +362,7 @@
 }
 
 .search{
-    margin-left:5%;
+    margin-left:10%;
     width:100%;
     background-repeat: no-repeat;
     background-size: 25px 30px;
@@ -374,6 +377,7 @@
 
 .search-button{
     position:relative;
+    margin-left:2%;
     padding:6px 15px 6px 15px;
     background-color: #004A7F ;
     border:1px solid #acb1b7;
@@ -399,6 +403,8 @@
     padding-right:10px;
 }
 
+
+/*! Advice Page styling */
 #advice-container{
     border-left:1px solid #acb1b7;
     border-right:1px solid #acb1b7;
@@ -417,7 +423,7 @@
 
 }
 
-
+/*! Bills Area styling */
 .bills-table{
     margin-top:20px;
     border:solid 2px;
